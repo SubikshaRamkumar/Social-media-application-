@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce | Profile page</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <!-- <div class="profile">
+        <h1>PROFILE</h1>
+        <div class="detail">
+          <label for="name">Name:</label>
+          <input id="name" value="subi">
+        </div>
+        <div class="detail">
+          <label for="email">Email Address:</label>
+          <input id="email"value="subi@gmail.com">
+        </div>
+        <div class="detail">
+          <label for="email">Address:</label>
+          <textarea id="address">prasanne avenue</textarea>
+        </div>
+        <div class="detail">
+          <label for="city">City:</label>
+          <textarea id="city" >Tirupur</textarea>
+        </div>
+        <div class="detail">
+          <label for="pincode">Pincode:</label>
+          <input id="pincode" type="number" value=641601>
+        </div>
+        <div class="detail">
+          <label for="country">Country:</label>
+          <input id="country" value="India">
+        </div>
+        <div class="detail">
+          <label for="phone">Phone Number:</label>
+          <input id="phone"  type="number" value=9876543210>
+        </div>
+        <div class="detail">
+          <label for="altPhone">Alternative Phone Number:</label>
+          <input id="altPhone" type="number" value=9876543210>
+        </div>
+      </div> -->
+    <form action="/profile" method="post">
+      <h1>Profile Information</h1>
+      <div class="complete">
+        <div class="data">
+        <label>Username</label>
+        <input class="text" type="text" name="name" value="<%= user.name %>" />
+      </div>
+      <div class="data">
+        <label>E-mail</label>
+        <input class="text" type="email" name="email" value="<%= user.email %>"/>
+      </div>
+       
+        <div class="data">
+          <label>Phone Number</label>
+          <input class="text" type="number" name="phoneNumber" value="<%= user.phoneNumber %>" />
+        </div>
+        <div class="data">
+          <label>Alternative Number</label>
+          <input class="text" type="number" name="altNumber" value="<%= user.altNumber %>" />
+        </div>
+        <div class="data">
+          <label>Address</label>
+          <input class="text" type="text" name="address" value="<%= user.address %>"/>
+        </div>
+        <!-- <div class="data">
+          <label>Password</label>
+          <input class="text" type="password" name="password" value="<%= user.password %>"/>
+        </div> -->
+        <button type="submit" class="submit">Save Details</button>
+        <a href="/home">Go to Home Page</a>
+      </div>
+    </form>
+
+  </body>
+</html>
